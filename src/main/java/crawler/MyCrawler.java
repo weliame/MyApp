@@ -65,16 +65,6 @@ public class MyCrawler extends WebCrawler {
     }
     
     public void writeToFile(String s){
-//    	File file = new File("output/500.txt");
-//    	FileWriter out;
-//		try {
-//			out = new FileWriter(file);
-//			BufferedWriter bw = new BufferedWriter(out);
-//			bw.write(s);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		try (PrintWriter pWriter = new PrintWriter(new BufferedWriter(new FileWriter( "output/500.txt",
 																						true)))) {
 			pWriter.println(s);
