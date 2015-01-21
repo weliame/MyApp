@@ -19,5 +19,5 @@ package league.fa_premier_league;
  */
 public class Arsenal {
 	
-	String homeUrl = "";
+	String homeUrl = "http://www.arsenal.com/home";
 }
