@@ -26,9 +26,11 @@ public class MainApp {
 	             new ClassPathXmlApplicationContext("Beans.xml");	
 	      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
 	      obj.getMessage();
+	      obj.printMsg();
 	      obj.setMessage(null);
 	      HelloWorld obj4 = (HelloWorld) context.getBean("helloWorld");
 	      obj4.getMessage();
+	      obj4.printMsg();
 	      HelloWorld obj2 = (HelloWorld) context.getBean("helloWorld2");
 	      obj2.getMessage();
 	      HelloWorld obj3 = (HelloWorld) context.getBean("message");
